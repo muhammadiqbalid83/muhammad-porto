@@ -91,11 +91,31 @@
             <td>Postgress</td>
           </tr>
         </table>
+        <div id="contact-me">
+          <form name="contact" id="contact" method="POST" data-netlify="true">
+            <h1>Contact Me</h1>
+            <div>
+              <label for="firstName">First Name</label
+              ><input type="text" name="firstName" id="firstName" required />
+            </div>
+            <div>
+              <label for="lastName">Last Name</label
+              ><input type="text" name="lastName" id="lastName" required />
+            </div>
+            <div>
+              <label for="message">Message</label
+              ><textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </div>
-      <h2>Reach me at</h2>
-      <a href="#">twitter</a>
-      <a href="#">linkedin</a>
-      <a href="#">instagram</a>
     </div>
     <script src="main.js"></script>
   </body>
