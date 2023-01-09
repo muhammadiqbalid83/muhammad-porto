@@ -13,11 +13,20 @@ body {
 
 header {
   padding: 16px;
+  position: sticky;
+  border: 1px solid white;
+  top: 0;
+  background: hsl(0, 0%, 80%);
+  border-bottom: 4px solid;
 }
 
 header nav > a {
   margin: 16px;
   text-decoration: none;
+}
+
+header nav > a:last-child {
+  margin-right: revert;
 }
 
 header nav > a:hover {
