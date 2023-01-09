@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="intro">
+    <header>
+      <nav>
+        <a href="#about-me"></a><a href="#qualifications">Qualifications</a
+        ><a href="hobbies">Hobbies</a><a href="technologies">Technologies</a
+        ><a href="contact-me">Contact</a>
+      </nav>
+    </header>
+    <main class="container">
+      <article class="intro">
         <img
           id="profile-image"
           width="300"
@@ -24,8 +31,8 @@
           <a href="#">linkedin</a>
           <a href="#">instagram</a>
         </p>
-      </div>
-      <div id="about-me">
+      </article>
+      <section id="about-me">
         <h2>About Me</h2>
         <p>A Software Engineer by profession with 9 years experience</p>
         <p>
@@ -48,26 +55,26 @@
           eligendi blanditiis molestiae vero aspernatur eos voluptates officiis
           soluta labore eum sint!
         </p>
-      </div>
+      </section>
 
-      <div id="qualification">
+      <section id="qualification">
         <h2>Qualifications</h2>
         <ol>
           <li>BE COMPUTER</li>
           <li>CDAC - Wireless and Mobile Computing</li>
         </ol>
-      </div>
+      </section>
 
-      <div id="hobbies">
+      <section id="hobbies">
         <h2>Hobbies</h2>
         <ul>
           <li>Swimming</li>
           <li>Listening to Music</li>
           <li>Drawing</li>
         </ul>
-      </div>
+      </section>
 
-      <div id="technologies">
+      <section id="technologies">
         <h2>Technologies</h2>
         <table>
           <tr>
@@ -91,18 +98,18 @@
             <td>Postgress</td>
           </tr>
         </table>
-        <div id="contact-me">
+        <section id="contact-me">
           <form name="contact" id="contact" method="POST" data-netlify="true">
             <h1>Contact Me</h1>
-            <div>
+            <section>
               <label for="firstName">First Name</label
               ><input type="text" name="firstName" id="firstName" required />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="lastName">Last Name</label
               ><input type="text" name="lastName" id="lastName" required />
-            </div>
-            <div>
+            </section>
+            <section>
               <label for="message">Message</label
               ><textarea
                 name="message"
@@ -110,13 +117,14 @@
                 cols="30"
                 rows="10"
               ></textarea>
-            </div>
+            </section>
 
             <button type="submit">Send</button>
           </form>
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </main>
+    <footer>Made with devnest</footer>
     <script src="main.js"></script>
   </body>
 </html>
