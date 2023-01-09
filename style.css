@@ -17,6 +17,11 @@ header {
 
 header nav > a {
   margin: 16px;
+  text-decoration: none;
+}
+
+header nav > a:hover {
+  text-decoration: underline;
 }
 
 footer {
