@@ -4,26 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhammad's Portofolio</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Gaurav's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="menu">
+      <button id="close-menu">&times;</button>
       <nav>
         <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#qualifications">Qualifications</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#technologies">Technologies</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#qualifications">Qualifications</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#contact-me">Contact</a></li>
         </ul>
       </nav>
     </section>
     <header>
       <nav class="default-nav">
-        <a href="#about-me"></a><a href="#qualifications">Qualifications</a
-        ><a href="hobbies">Hobbies</a><a href="technologies">Technologies</a
-        ><a href="contact-me">Contact</a>
+        <a href="#about-me">About Me</a><a href="#qualifications">Qualifications</a><a href="#hobbies">Hobbies</a><a href="#technologies">Technologies</a><a href="#contact-me">Contact</a>
       </nav>
       <nav class="mobile-nav">
         <button id="menu-button">Menu</button>
@@ -31,54 +30,48 @@
     </header>
     <main class="container">
       <article class="intro">
-        <img
-          id="profile-image"
-          width="300"
-          height="300"
-          src="./profile.jpg"
-          alt="profile"
-        />
-        <h1 id="qualification">Hi, I'm Muhammad Iqbal</h1>
-        <p>I'm <span id="dynamic-text" class="dynamic-text-color"></span></p>
-        <p>
-          <a href="#">twitter</a>
-          <a href="#">linkedin</a>
-          <a href="#">instagram</a>
+        <img id="profile-image" src="Gaurav.jpg" alt="Profile image - Gaurav" />
+        <h1>Hi, I'm Gaurav</h1>
+        <p>I am a <span id="dynamic-text" class="dynamic-text-color"></span></p>
+        <p class="social-links">
+          <a href="https://twitter.com/gaurav_sen_" target="_blank">
+            <img width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-twitter-135.png" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/gauravs3n" target="_blank">
+            <img width="30" height="30" src="https://www.iconpacks.net/icons/1/free-icon-linkedin-130.png" alt="" /> </a
+          ><a href="https://www.instagram.com/gaurav.sen_/" target="_blank">
+            <img
+              width="30"
+              height="30"
+              src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png"
+              alt=""
+            />
+          </a>
         </p>
       </article>
       <section id="about-me">
         <h2>About Me</h2>
-        <p>A Software Engineer by profession with 9 years experience</p>
+        <p>A Software Engineer by profession with 9 years of industry experience.</p>
+        <p>In 2020 I started tutoring as a hobby. A way to earn a passive side income.</p>
+
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut aperiam
-          rem, amet qui incidunt nostrum dolores itaque recusandae mollitia
-          tempore nam nesciunt voluptas! Totam, sunt delectus nobis nihil
-          officiis tenetur.
+          After receiving positive feedback from a large number of students, I took it up more actively. It gives me
+          immense joy to see my students succeed and grow with the skills that I've taught them.
         </p>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
-          numquam velit sed non cumque nobis. A sunt corrupti hic et eius dolor
-          repudiandae nostrum perspiciatis debitis provident, natus mollitia
-          nulla?
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          architecto id facere. Ad aperiam voluptatum, dolore totam, atque
-          eligendi blanditiis molestiae vero aspernatur eos voluptates officiis
-          soluta labore eum sint!
+          This website is an attempt to share my knowledge and experience. I'm willing to share my knowledge and
+          experience with you. Are you willing to learn?
         </p>
       </section>
 
-      <section id="qualification">
+      <section id="qualifications">
         <h2>Qualifications</h2>
         <ol>
-          <li>BE COMPUTER</li>
+          <li>BE Computer</li>
           <li>CDAC - Wireless and Mobile Computing</li>
         </ol>
       </section>
-
       <section id="hobbies">
         <h2>Hobbies</h2>
         <ul>
@@ -87,7 +80,6 @@
           <li>Drawing</li>
         </ul>
       </section>
-
       <section id="technologies">
         <h2>Technologies</h2>
         <table>
@@ -98,8 +90,8 @@
           </tr>
           <tr>
             <td>HTML</td>
-            <td>Nodejs</td>
-            <td>mySql</td>
+            <td>NodeJS</td>
+            <td>MySQL</td>
           </tr>
           <tr>
             <td>CSS</td>
@@ -108,37 +100,35 @@
           </tr>
           <tr>
             <td>JS</td>
-            <td>Asp .net</td>
-            <td>Postgress</td>
+            <td>Asp.NET</td>
+            <td>Postgres</td>
           </tr>
         </table>
-        <section id="contact-me">
-          <form name="contact" id="contact" method="POST" data-netlify="true">
-            <h1>Contact Me</h1>
-            <section>
-              <label for="firstName">First Name</label
-              ><input type="text" name="firstName" id="firstName" required />
-            </section>
-            <section>
-              <label for="lastName">Last Name</label
-              ><input type="text" name="lastName" id="lastName" required />
-            </section>
-            <section>
-              <label for="message">Message</label
-              ><textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </section>
-
-            <button type="submit">Send</button>
-          </form>
-        </section>
       </section>
+    </section>
+    <section id="contact-me">
+      <form name="contact" id="contact" method="POST" data-netlify="true">
+        <h1>Contact Me</h1>
+        <section>
+          <label for="firstName">First name</label>
+          <input type="text" name="firstName" id="firstName" required />
+        </section>
+        <section>
+          <label for="lastName">Last name</label>
+          <input type="text" name="lastName" id="lastName" required />
+        </section>
+        <section>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+    </section>
     </main>
-    <footer>Made with devnest</footer>
+    <footer>
+      Made with ❤️ by Gaurav ©2022
+    </footer>
     <script src="main.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
